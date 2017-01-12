@@ -2,6 +2,7 @@
 
 
 //#include "stdafx.h"
+//need precise path
 #include "opencv2/highgui/highgui.hpp"
 #include <iostream>
 #include <stdlib.h>
@@ -14,6 +15,7 @@ int main(int argc, const char** argv)
 	Mat img = imread("d:\\appp.jpg", CV_LOAD_IMAGE_UNCHANGED);
 	
 	Mat red_img(500, 500, CV_8UC3, Scalar(0, 0, 256));
+	//sometimes will use convertTo func to let your img fit to the desire size of imwrite
 	red_img.convertTo(red_img, CV_8U);
 	
 
@@ -27,7 +29,7 @@ int main(int argc, const char** argv)
 	namedWindow("ShowWindow", CV_WINDOW_AUTOSIZE);
 	namedWindow("RedWindow", CV_WINDOW_AUTOSIZE);
 	
-
+	//sometime will have some problem when you want to save your img as .jpg file
 	imwrite("d:\\jj.bmp", img);
 	imshow("ShowWindow", img);
 	imshow("RedWindow", red_img);
