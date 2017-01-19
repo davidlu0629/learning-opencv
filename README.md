@@ -4,8 +4,8 @@ step1. intall essential tool
 >>>    sudo apt-get install build-essential
 
 step2. something we may need
->>>    sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
->>>    sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
+>>> sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev  
+>>>   sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
 
 step3. download opencv
 >>>    wget https://github.com/Itseez/opencv/archive/3.2.0.zip
@@ -13,8 +13,8 @@ step3. download opencv
 step4. unzip opencv & cd to folder you unzip
 
 step5. make a new folder named "build" 
->>>    mkdir build
->>>    cd build
+>>> mkdir build  
+>>> cd build
 
 step6. cmake compile(the most important and easy to meet mistake)
 >>>    cmake -DBUILD_TIFF=ON -DBUILD_opencv_java=OFF -DWITH_CUDA=OFF -DENABLE_AVX=ON -DWITH_OPENGL=ON -DWITH_OPENCL=ON -DWITH_IPP=ON -DWITH_TBB=ON -DWITH_EIGEN=ON -DWITH_V4L=ON -DWITH_VTK=OFF -DBUILD_TESTS=OFF -DBUILD_PERF_TESTS=OFF -DCMAKE_BUILD_TYPE=RELEASE -DCMAKE_INSTALL_PREFIX=$(python3 -c "import sys; print(sys.prefix)") -DPYTHON3_EXECUTABLE=$(which python3) -DPYTHON3_INCLUDE_DIR=$(python3 -c "from distutils.sysconfig import get_python_inc; print(get_python_inc())") -DPYTHON3_PACKAGES_PATH=$(python3 -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())") ..
@@ -27,10 +27,10 @@ step8. install opencv
 
 FINISH
 
-Test a file to see if it can work(use cmake)
-  Install cmake
-  >>>  sudo apt-get install cmake-gui
-  we can enter 'cmake-gui' to open the application
+Test a file to see if it can work(use cmake)  
+  Install cmake  
+  >>>  sudo apt-get install cmake-gui     
+  we can enter 'cmake-gui' to open the application
   
   Before we compile the file we need a 'CMakeLists.txt' file, the detail of the file seems like:
     # cmake needs this line(usually no need to change)
