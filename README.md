@@ -34,8 +34,11 @@ Test a file to see if it can work(use cmake)
   we can enter 'cmake-gui' to open the application
   
   Before we compile the file we need a 'CMakeLists.txt' file, the detail of the file seems like:  
-    # Define project name(your project name)
+    
+    
+    # Define project name(your project name)
     project(opencv_example_project)
+    
     # cmake needs this line(usually no need to change)
     cmake_minimum_required(VERSION 2.8)
 
@@ -71,7 +74,7 @@ Test a file to see if it can work(use cmake)
   >>>make  
   execute object file  
   >>>./opencv_example  
-Reference  
-http://www.cnblogs.com/simplelovecs/p/5156458.htm  
+Reference  
+ http://www.cnblogs.com/simplelovecs/p/5156458.htm 
 http://www.cnblogs.com/woshijpf/p/3840530.html  
 https://gist.github.com/scienceopen/a855d6dbfa5406e67fe9  
