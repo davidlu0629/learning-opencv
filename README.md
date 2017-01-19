@@ -33,12 +33,11 @@ Test a file to see if it can work(use cmake)
   
   we can enter 'cmake-gui' to open the application
   
-  Before we compile the file we need a 'CMakeLists.txt' file, the detail of the file seems like:
+  Before we compile the file we need a 'CMakeLists.txt' file, the detail of the file seems like:  
+    # Define project name(your project name)
+    project(opencv_example_project)
     # cmake needs this line(usually no need to change)
     cmake_minimum_required(VERSION 2.8)
-
-    # Define project name(your project name)
-    project(opencv_example_project)
 
     # Find OpenCV, you may need to set OpenCV_DIR variable
     # to the absolute path to the directory containing OpenCVConfig.cmake file
@@ -67,13 +66,12 @@ Test a file to see if it can work(use cmake)
     
   Then, use 'cmake-gui' to setup path to your source code, where you want to make binary code and set path to folder 'build'
   Click 'Configure' & 'Generate' to see if there are any error
-  then,
-  >>>cmake .
-  >>>make
-  execute object file
-  >>>./opencv_example
-
-Reference  
+  then,  
+  >>>cmake .  
+  >>>make  
+  execute object file  
+  >>>./opencv_example  
+Reference  
 http://www.cnblogs.com/simplelovecs/p/5156458.htm  
 http://www.cnblogs.com/woshijpf/p/3840530.html  
 https://gist.github.com/scienceopen/a855d6dbfa5406e67fe9  
