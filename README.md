@@ -75,6 +75,6 @@ Test a file to see if it can work(use cmake)
   execute object file  
   >>>./opencv_example  
 Reference  
- http://www.cnblogs.com/simplelovecs/p/5156458.htm 
+http://www.cnblogs.com/simplelovecs/p/5156458.htm  
 http://www.cnblogs.com/woshijpf/p/3840530.html  
-https://gist.github.com/scienceopen/a855d6dbfa5406e67fe9  
+https://gist.github.com/scienceopen/a855d6dbfa5406e67fe9
