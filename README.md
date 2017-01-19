@@ -29,8 +29,9 @@ FINISH
 
 Test a file to see if it can work(use cmake)  
   Install cmake  
-  >>>  sudo apt-get install cmake-gui     
-  we can enter 'cmake-gui' to open the application
+  >>>  sudo apt-get install cmake-gui  
+  
+  we can enter 'cmake-gui' to open the application
   
   Before we compile the file we need a 'CMakeLists.txt' file, the detail of the file seems like:
     # cmake needs this line(usually no need to change)
@@ -72,7 +73,7 @@ Test a file to see if it can work(use cmake)
   execute object file
   >>>./opencv_example
 
-Reference
-http://www.cnblogs.com/simplelovecs/p/5156458.htm
-http://www.cnblogs.com/woshijpf/p/3840530.html
-https://gist.github.com/scienceopen/a855d6dbfa5406e67fe9
+Reference  
+http://www.cnblogs.com/simplelovecs/p/5156458.htm  
+http://www.cnblogs.com/woshijpf/p/3840530.html  
+https://gist.github.com/scienceopen/a855d6dbfa5406e67fe9  
